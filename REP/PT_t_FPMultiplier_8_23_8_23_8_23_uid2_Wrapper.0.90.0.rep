@@ -1,0 +1,105 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-group clk
+	-sort_by slack
+Design : FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 15:23:30 2017
+****************************************
+
+
+  Startpoint: i_Y_d1_reg_12_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_R_d1_reg_32_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: max
+
+  Point                           Incr       Path    Voltage
+  -----------------------------------------------------------
+  clock clk (rise edge)           0.00       0.00
+  clock network delay (propagated)
+                                  0.01       0.01
+  i_Y_d1_reg_12_/CP (DFQD4BWPLVT)
+                                  0.00       0.01 r     0.90
+  i_Y_d1_reg_12_/Q (DFQD4BWPLVT)
+                                  0.10 &     0.11 f     0.90
+  U211/ZN (XNR2D2BWPLVT)          0.11 &     0.22 r     0.90
+  U1641/ZN (ND2D2BWPLVT)          0.06 &     0.28 f     0.90
+  U887/ZN (OAI22D1BWPLVT)         0.04 &     0.32 r     0.90
+  U1022/S (FA1D0BWPLVT)           0.11 &     0.43 r     0.90
+  U1027/S (FA1D0BWPLVT)           0.13 &     0.56 r     0.90
+  U1320/ZN (NR2D1BWPLVT)          0.02 &     0.59 f     0.90
+  U2023/ZN (OAI21D1BWPHVT)        0.04 &     0.63 r     0.90
+  U1280/S (FA1D0BWPLVT)           0.11 &     0.73 r     0.90
+  U2199/ZN (INR2D1BWPLVT)         0.02 &     0.75 f     0.90
+  U1282/ZN (NR2D1BWPLVT)          0.04 &     0.79 r     0.90
+  U1283/ZN (ND2D1BWPLVT)          0.04 &     0.83 f     0.90
+  U91/ZN (INVD1BWPLVT)            0.03 &     0.86 r     0.90
+  U81/ZN (ND2D3BWPLVT)            0.02 &     0.88 f     0.90
+  U82/ZN (ND2D8BWPLVT)            0.02 &     0.90 r     0.90
+  U984/ZN (ND2D2BWPLVT)           0.02 &     0.92 f     0.90
+  U1376/ZN (INVD2BWPLVT)          0.02 &     0.93 r     0.90
+  U1378/ZN (NR3D3BWPLVT)          0.02 &     0.95 f     0.90
+  U2056/Z (CKXOR2D1BWPLVT)        0.06 &     1.01 r     0.90
+  test_SignificandMultiplication_Adder_final6_0/U126/ZN (INVD1BWP)
+                                  0.02 &     1.02 f     0.90
+  test_SignificandMultiplication_Adder_final6_0/U57/ZN (NR2D1BWPLVT)
+                                  0.03 &     1.06 r     0.90
+  test_SignificandMultiplication_Adder_final6_0/U22/ZN (ND2D1BWPLVT)
+                                  0.04 &     1.09 f     0.90
+  test_SignificandMultiplication_Adder_final6_0/U20/ZN (NR2D1BWPLVT)
+                                  0.04 &     1.13 r     0.90
+  test_SignificandMultiplication_Adder_final6_0/U8/ZN (AOI21D1BWPLVT)
+                                  0.02 &     1.15 f     0.90
+  test_SignificandMultiplication_Adder_final6_0/U1/ZN (NR2XD2BWPLVT)
+                                  0.02 &     1.17 r     0.90
+  test_SignificandMultiplication_Adder_final6_0/U214/ZN (ND2D8BWPLVT)
+                                  0.02 &     1.19 f     0.90
+  U305/ZN (CKND4BWPLVT)           0.02 &     1.21 r     0.90
+  U2453/ZN (INVD12BWPLVT)         0.02 &     1.23 f     0.90
+  U139/ZN (INR2D1BWPLVT)          0.03 &     1.25 r     0.90
+  U2196/ZN (NR2D1BWPLVT)          0.01 &     1.27 f     0.90
+  U2087/Z (CKXOR2D1BWPLVT)        0.04 &     1.31 r     0.90
+  test_RoundingAdder/U44/ZN (INVD1BWPLVT)
+                                  0.02 &     1.32 f     0.90
+  test_RoundingAdder/U45/ZN (NR2D1BWPLVT)
+                                  0.04 &     1.36 r     0.90
+  test_RoundingAdder/U13/ZN (ND2D1BWPLVT)
+                                  0.02 &     1.39 f     0.90
+  test_RoundingAdder/U10/ZN (NR2D1BWPLVT)
+                                  0.03 &     1.41 r     0.90
+  test_RoundingAdder/U7/ZN (ND2D2BWPLVT)
+                                  0.03 &     1.44 f     0.90
+  test_RoundingAdder/U42/ZN (NR2D2BWPLVT)
+                                  0.02 &     1.46 r     0.90
+  test_RoundingAdder/U41/ZN (ND2D1BWPLVT)
+                                  0.02 &     1.48 f     0.90
+  test_RoundingAdder/U1/Z (CKXOR2D1BWPLVT)
+                                  0.03 &     1.52 f     0.90
+  U2483/Z (OR3D4BWPLVT)           0.04 &     1.55 f     0.90
+  U2484/ZN (ND2D4BWPLVT)          0.01 &     1.57 r     0.90
+  o_R_d1_reg_32_/D (DFQD1BWPLVT)
+                                  0.00 &     1.57 r     0.90
+  data arrival time                          1.57
+
+  clock clk (rise edge)           2.00       2.00
+  clock network delay (propagated)
+                                  0.00       2.00
+  clock reconvergence pessimism
+                                  0.00       2.00
+  o_R_d1_reg_32_/CP (DFQD1BWPLVT)            2.00 r
+  library setup time             -0.01       1.99
+  data required time                         1.99
+  -----------------------------------------------------------
+  data required time                         1.99
+  data arrival time                         -1.57
+  -----------------------------------------------------------
+  slack (MET)                                0.42
+
+
+1

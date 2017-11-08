@@ -1,0 +1,35 @@
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 6 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+Design : FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 15:23:34 2017
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           2.032e-04    0.0000    0.0000 2.032e-04 (17.46%)  i
+register                3.002e-05 3.555e-05 3.117e-06 6.869e-05 ( 5.90%)  
+combinational           5.023e-04 3.528e-04 3.719e-05 8.923e-04 (76.64%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 3.884e-04   (33.36%)
+  Cell Internal Power  = 7.356e-04   (63.18%)
+  Cell Leakage Power   = 4.031e-05   ( 3.46%)
+                         ---------
+Total Power            = 1.164e-03  (100.00%)
+
+1

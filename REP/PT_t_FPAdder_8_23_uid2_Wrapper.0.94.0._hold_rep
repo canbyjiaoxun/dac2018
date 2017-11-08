@@ -1,0 +1,47 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-group clk
+	-sort_by slack
+Design : FPAdder_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 14:44:17 2017
+****************************************
+
+
+  Startpoint: i_Y_d1_reg_33_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_R_d1_reg_33_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: min
+
+  Point                                          Incr       Path    Voltage
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                          0.00       0.00
+  clock network delay (propagated)               0.01       0.01
+  i_Y_d1_reg_33_/CP (DFQD2BWPLVT)                0.00       0.01 r     0.94
+  i_Y_d1_reg_33_/Q (DFQD2BWPLVT)                 0.07 &     0.08 f     0.94
+  U2042/ZN (NR2XD0BWPLVT)                        0.05 &     0.12 r     0.94
+  U2110/ZN (INVD1BWPLVT)                         0.04 &     0.17 f     0.94
+  U2357/ZN (MOAI22D1BWPLVT)                      0.03 &     0.20 f     0.94
+  o_R_d1_reg_33_/D (DFQD1BWPLVT)                 0.00 &     0.20 f     0.94
+  data arrival time                                         0.20
+
+  clock clk (rise edge)                          0.00       0.00
+  clock network delay (propagated)               0.00       0.00
+  clock reconvergence pessimism                  0.00       0.00
+  o_R_d1_reg_33_/CP (DFQD1BWPLVT)                           0.00 r
+  library hold time                              0.01       0.02
+  data required time                                        0.02
+  --------------------------------------------------------------------------
+  data required time                                        0.02
+  data arrival time                                        -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                               0.18
+
+
+1

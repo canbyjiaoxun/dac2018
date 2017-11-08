@@ -1,0 +1,50 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-group clk
+	-sort_by slack
+Design : FPAdder_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 14:44:16 2017
+****************************************
+
+
+  Startpoint: i_Y_d1_reg_30_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_R_d1_reg_32_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: min
+
+  Point                                          Incr       Path    Voltage
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                          0.00       0.00
+  clock network delay (propagated)               0.01       0.01
+  i_Y_d1_reg_30_/CP (DFQD2BWPLVT)                0.00       0.01 r     0.93
+  i_Y_d1_reg_30_/Q (DFQD2BWPLVT)                 0.06 &     0.08 r     0.93
+  U529/ZN (INVD1BWPLVT)                          0.01 &     0.09 f     0.93
+  U722/ZN (MUX2ND4BWP)                           0.05 &     0.14 r     0.93
+  U1280/ZN (ND2D1BWP)                            0.03 &     0.16 f     0.93
+  U190/Z (OR2XD1BWPLVT)                          0.03 &     0.19 f     0.93
+  U1203/ZN (ND2D1BWP)                            0.01 &     0.20 r     0.93
+  U1201/ZN (NR2D1BWPLVT)                         0.01 &     0.21 f     0.93
+  o_R_d1_reg_32_/D (DFQD1BWPLVT)                 0.00 &     0.21 f     0.93
+  data arrival time                                         0.21
+
+  clock clk (rise edge)                          0.00       0.00
+  clock network delay (propagated)               0.00       0.00
+  clock reconvergence pessimism                  0.00       0.00
+  o_R_d1_reg_32_/CP (DFQD1BWPLVT)                           0.00 r
+  library hold time                              0.02       0.02
+  data required time                                        0.02
+  --------------------------------------------------------------------------
+  data required time                                        0.02
+  data arrival time                                        -0.21
+  --------------------------------------------------------------------------
+  slack (MET)                                               0.19
+
+
+1

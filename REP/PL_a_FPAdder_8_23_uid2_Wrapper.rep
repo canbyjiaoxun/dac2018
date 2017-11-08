@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : FPAdder_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 14:37:09 2017
+****************************************
+
+Library(s) Used:
+
+    tcbn45gsbwplvtwc (File: /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db)
+    tcbn45gsbwpwc (File: /home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db)
+    tcbn45gsbwphvtwc (File: /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db)
+
+Number of ports:                          104
+Number of nets:                          2003
+Number of cells:                         1934
+Number of combinational cells:           1832
+Number of sequential cells:               102
+Number of macros/black boxes:               0
+Number of buf/inv:                        397
+Number of references:                     190
+
+Combinational area:               1952.748038
+Buf/Inv area:                      239.551207
+Noncombinational area:             372.027609
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  2324.775647
+Total area:                 undefined
+1

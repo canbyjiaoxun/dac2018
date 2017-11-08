@@ -1,0 +1,46 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-group clk
+	-sort_by slack
+Design : FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 15:23:44 2017
+****************************************
+
+
+  Startpoint: i_Y_d1_reg_33_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_R_d1_reg_33_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: min
+
+  Point                                          Incr       Path    Voltage
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                          0.00       0.00
+  clock network delay (propagated)               0.02       0.02
+  i_Y_d1_reg_33_/CP (DFQD1BWPHVT)                0.00       0.02 r     0.98
+  i_Y_d1_reg_33_/Q (DFQD1BWPHVT)                 0.06 &     0.08 r     0.98
+  U1584/ZN (NR2D1BWPHVT)                         0.02 &     0.10 f     0.98
+  U2486/ZN (ND2D4BWPLVT)                         0.01 &     0.11 r     0.98
+  o_R_d1_reg_33_/D (DFQD1BWPLVT)                 0.00 &     0.11 r     0.98
+  data arrival time                                         0.11
+
+  clock clk (rise edge)                          0.00       0.00
+  clock network delay (propagated)               0.00       0.00
+  clock reconvergence pessimism                  0.00       0.00
+  o_R_d1_reg_33_/CP (DFQD1BWPLVT)                           0.00 r
+  library hold time                              0.00       0.01
+  data required time                                        0.01
+  --------------------------------------------------------------------------
+  data required time                                        0.01
+  data arrival time                                        -0.11
+  --------------------------------------------------------------------------
+  slack (MET)                                               0.10
+
+
+1

@@ -1,0 +1,88 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+Version: J-2014.09-SP5-3
+Date   : Mon Nov  6 15:09:45 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: WCCOM   Library: tcbn45gsbwpwc
+Wire Load Model Mode: Inactive.
+
+  Startpoint: i_X_d1_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_R_d1_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_X_d1_reg[5]/CP (DFQD4BWPHVT)                          0.00       0.00 r
+  i_X_d1_reg[5]/Q (DFQD4BWPHVT)                           0.16       0.16 f
+  U98/ZN (XNR2D0BWPHVT)                                   0.15 *     0.31 f
+  U156/ZN (OAI22D0BWPHVT)                                 0.12 *     0.43 r
+  U165/S (FA1D1BWPHVT)                                    0.23 *     0.66 r
+  U159/ZN (NR2XD0BWPHVT)                                  0.03 *     0.69 f
+  U160/ZN (INVD0BWPHVT)                                   0.04 *     0.74 r
+  U163/ZN (AOI21D1BWP)                                    0.04 *     0.78 f
+  U168/ZN (OAI21D2BWP)                                    0.04 *     0.82 r
+  U1370/ZN (CKND1BWPHVT)                                  0.03 *     0.85 f
+  U1371/ZN (OAI21D1BWPHVT)                                0.05 *     0.90 r
+  U1375/Z (XOR2D1BWP)                                     0.08 *     0.98 f
+  test/SignificandMultiplication/Adder_final6_0/X[1] (IntAdder_42_f100_uid15)
+                                                          0.00       0.98 f
+  test/SignificandMultiplication/Adder_final6_0/U5/ZN (ND2D0BWPHVT)
+                                                          0.04 *     1.02 r
+  test/SignificandMultiplication/Adder_final6_0/U6/ZN (OAI21D0BWPHVT)
+                                                          0.07 *     1.09 f
+  test/SignificandMultiplication/Adder_final6_0/U11/ZN (AOI21D1BWPHVT)
+                                                          0.07 *     1.16 r
+  test/SignificandMultiplication/Adder_final6_0/U271/ZN (INVD0BWPHVT)
+                                                          0.05 *     1.21 f
+  test/SignificandMultiplication/Adder_final6_0/U299/ZN (AOI21D0BWPHVT)
+                                                          0.07 *     1.28 r
+  test/SignificandMultiplication/Adder_final6_0/U301/Z (XOR2D0BWPHVT)
+                                                          0.14 *     1.42 f
+  test/SignificandMultiplication/Adder_final6_0/R[4] (IntAdder_42_f100_uid15)
+                                                          0.00       1.42 f
+  U1547/ZN (INR4D0BWP)                                    0.07 *     1.49 r
+  U1548/ZN (INR4D0BWP)                                    0.11 *     1.60 r
+  U1549/ZN (ND2D1BWPLVT)                                  0.03 *     1.63 f
+  U1550/ZN (NR4D1BWPLVT)                                  0.03 *     1.66 r
+  U1551/ZN (OAI21D1BWPLVT)                                0.03 *     1.69 f
+  U112/ZN (NR2D2BWPLVT)                                   0.02 *     1.71 r
+  U109/ZN (INR2D1BWPLVT)                                  0.02 *     1.72 f
+  test/RoundingAdder/Cin (IntAdder_33_f100_uid23)         0.00       1.72 f
+  test/RoundingAdder/U73/ZN (INVD2BWPLVT)                 0.02 *     1.74 r
+  test/RoundingAdder/U26/ZN (NR2D2BWPLVT)                 0.01 *     1.75 f
+  test/RoundingAdder/U63/ZN (ND2D2BWPLVT)                 0.01 *     1.76 r
+  test/RoundingAdder/U55/ZN (NR2D4BWPLVT)                 0.01 *     1.78 f
+  test/RoundingAdder/U70/ZN (INVD3BWP)                    0.02 *     1.80 r
+  test/RoundingAdder/U75/ZN (NR2XD1BWPLVT)                0.02 *     1.81 f
+  test/RoundingAdder/U79/ZN (XNR2D1BWPHVT)                0.10 *     1.91 r
+  test/RoundingAdder/R[13] (IntAdder_33_f100_uid23)       0.00       1.91 r
+  o_R_d1_reg[13]/D (DFQD1BWPHVT)                          0.00 *     1.91 r
+  data arrival time                                                  1.91
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  o_R_d1_reg[13]/CP (DFQD1BWPHVT)                         0.00       2.00 r
+  library setup time                                     -0.04       1.96
+  data required time                                                 1.96
+  --------------------------------------------------------------------------
+  data required time                                                 1.96
+  data arrival time                                                 -1.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+1

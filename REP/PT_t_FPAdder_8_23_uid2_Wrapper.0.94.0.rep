@@ -1,0 +1,98 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-group clk
+	-sort_by slack
+Design : FPAdder_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 14:44:17 2017
+****************************************
+
+
+  Startpoint: i_Y_d1_reg_29_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_R_d1_reg_20_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: max
+
+  Point                                          Incr       Path    Voltage
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                          0.00       0.00
+  clock network delay (propagated)               0.01       0.01
+  i_Y_d1_reg_29_/CP (DFQD2BWPLVT)                0.00       0.01 r     0.94
+  i_Y_d1_reg_29_/Q (DFQD2BWPLVT)                 0.07 &     0.08 f     0.94
+  U552/ZN (INVD1BWPLVT)                          0.02 &     0.10 r     0.94
+  U532/ZN (NR2D2BWPLVT)                          0.01 &     0.10 f     0.94
+  U2242/ZN (INVD1BWPLVT)                         0.01 &     0.12 r     0.94
+  U2346/ZN (ND2D2BWP)                            0.01 &     0.13 f     0.94
+  U2236/ZN (NR2D2BWPLVT)                         0.02 &     0.15 r     0.94
+  U549/ZN (NR3D2BWPLVT)                          0.02 &     0.16 f     0.94
+  U550/ZN (CKND2D8BWPLVT)                        0.01 &     0.17 r     0.94
+  U2234/ZN (CKND2D4BWPLVT)                       0.02 &     0.19 f     0.94
+  U2229/ZN (INVD1BWPLVT)                         0.01 &     0.20 r     0.94
+  U1155/ZN (ND2D1BWPLVT)                         0.01 &     0.22 f     0.94
+  U1151/ZN (ND2D2BWPLVT)                         0.01 &     0.23 r     0.94
+  U605/ZN (INVD1BWPLVT)                          0.01 &     0.24 f     0.94
+  U607/ZN (ND2D2BWPLVT)                          0.01 &     0.25 r     0.94
+  U1132/ZN (ND3D1BWPLVT)                         0.03 &     0.28 f     0.94
+  U2194/ZN (NR2D4BWPLVT)                         0.02 &     0.30 r     0.94
+  U2192/ZN (OAI21D2BWPLVT)                       0.02 &     0.32 f     0.94
+  U2182/ZN (IOA21D1BWPLVT)                       0.02 &     0.33 r     0.94
+  U2133/ZN (OAI21D2BWPLVT)                       0.02 &     0.35 f     0.94
+  U809/ZN (INVD2BWP)                             0.01 &     0.37 r     0.94
+  U1061/ZN (ND3D1BWPLVT)                         0.03 &     0.40 f     0.94
+  U999/ZN (AOI22D0BWPLVT)                        0.04 &     0.43 r     0.94
+  U1002/ZN (ND3D2BWPLVT)                         0.03 &     0.46 f     0.94
+  U1036/ZN (ND2D1BWPLVT)                         0.02 &     0.48 r     0.94
+  U1039/ZN (ND3D2BWPLVT)                         0.02 &     0.50 f     0.94
+  U951/ZN (INVD1BWPLVT)                          0.01 &     0.51 r     0.94
+  U1886/ZN (OAI22D2BWPLVT)                       0.02 &     0.53 f     0.94
+  U1109/ZN (ND2D2BWPLVT)                         0.02 &     0.55 r     0.94
+  U1110/ZN (INVD2BWPLVT)                         0.01 &     0.55 f     0.94
+  U1116/ZN (ND2D2BWPLVT)                         0.01 &     0.56 r     0.94
+  U2354/ZN (ND2D1BWPLVT)                         0.02 &     0.59 f     0.94
+  U1163/ZN (NR2D2BWPLVT)                         0.03 &     0.62 r     0.94
+  U1752/ZN (AOI21D4BWPLVT)                       0.02 &     0.63 f     0.94
+  U1175/ZN (CKND3BWPLVT)                         0.01 &     0.65 r     0.94
+  U795/ZN (AOI21D1BWPLVT)                        0.01 &     0.66 f     0.94
+  U1299/Z (CKXOR2D1BWPLVT)                       0.04 &     0.71 r     0.94
+  U1303/ZN (NR4D1BWPLVT)                         0.02 &     0.73 f     0.94
+  U770/ZN (INVD2BWPLVT)                          0.02 &     0.75 r     0.94
+  U1569/ZN (NR3D2BWPLVT)                         0.02 &     0.77 f     0.94
+  U2302/ZN (CKND2D2BWPLVT)                       0.01 &     0.78 r     0.94
+  U741/ZN (OAI21D4BWPLVT)                        0.01 &     0.79 f     0.94
+  U739/ZN (INVD2BWPLVT)                          0.01 &     0.81 r     0.94
+  U1665/ZN (ND3D2BWPLVT)                         0.02 &     0.83 f     0.94
+  U1588/ZN (NR2D4BWPLVT)                         0.02 &     0.85 r     0.94
+  U1740/ZN (ND2D1BWPLVT)                         0.05 &     0.90 f     0.94
+  U1746/ZN (OAI22D1BWPLVT)                       0.04 &     0.94 r     0.94
+  U1763/ZN (IOA21D1BWPLVT)                       0.04 &     0.98 r     0.94
+  U176/Z (OR2XD1BWPLVT)                          0.02 &     1.00 r     0.94
+  U154/ZN (NR2D2BWPLVT)                          0.01 &     1.01 f     0.94
+  U559/ZN (NR2D1BWPLVT)                          0.01 &     1.02 r     0.94
+  U186/Z (AN3XD1BWPLVT)                          0.03 &     1.05 r     0.94
+  U1270/ZN (ND2D1BWPLVT)                         0.02 &     1.07 f     0.94
+  U1831/ZN (NR2XD3BWPLVT)                        0.02 &     1.09 r     0.94
+  U1223/ZN (ND3D1BWPLVT)                         0.02 &     1.11 f     0.94
+  U517/ZN (XNR2D1BWPLVT)                         0.04 &     1.15 r     0.94
+  o_R_d1_reg_20_/D (DFQD1BWP)                    0.00 &     1.15 r     0.94
+  data arrival time                                         1.15
+
+  clock clk (rise edge)                          2.00       2.00
+  clock network delay (propagated)               0.00       2.00
+  clock reconvergence pessimism                  0.00       2.00
+  o_R_d1_reg_20_/CP (DFQD1BWP)                              2.00 r
+  library setup time                            -0.01       1.99
+  data required time                                        1.99
+  --------------------------------------------------------------------------
+  data required time                                        1.99
+  data arrival time                                        -1.15
+  --------------------------------------------------------------------------
+  slack (MET)                                               0.84
+
+
+1
