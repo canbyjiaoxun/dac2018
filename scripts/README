@@ -1,0 +1,9 @@
+#This is a readme file on how to execute the dc, icc and pt scripts.
+#It can also use STA to analyze the critical path in the design. 
+#prerequisite: change the name in the 'dname'; 
+dc: dc_shell -f dc_flopoco.tcl -output_log_file dc.log -topographical_mode
+icc: icc_shell -f icc_flopoco.tcl -output_log_file icc.log
+pt: pt_shell -file pt_hvt_scaling.tcl -output_log_file pt.log
+STA: pt_shell -file STA.tcl -output_log_file STA.log
+critical_path: critical_path.tcl; cannot be executed but providing enough commands.
+#post-check: timing report to see whether there are violations or failed design. 

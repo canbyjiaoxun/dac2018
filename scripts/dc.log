@@ -1,0 +1,1037 @@
+Starting shell in Topographical mode...
+set_host_options -max_cores 2
+1
+set dname FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+set SYNOPSYS "/home/tools/DC_2/syn/J-2014.09-SP5-3/amd64/syn/bin"
+/home/tools/DC_2/syn/J-2014.09-SP5-3/amd64/syn/bin
+set search_path  ". $SYNOPSYS /home/tools/DC_2/syn/J-2014.09-SP5-3/dw /home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn"
+. /home/tools/DC_2/syn/J-2014.09-SP5-3/amd64/syn/bin /home/tools/DC_2/syn/J-2014.09-SP5-3/dw /home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn
+set synthetic_library "/home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/dw_foundation.sldb /home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/standard.sldb"
+/home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/dw_foundation.sldb /home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/standard.sldb
+set target_library_nvt "/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db
+set target_library_hvt "/home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db"
+/home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db
+set target_library_lvt "/home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db"
+/home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db
+set target_library "$target_library_nvt $target_library_hvt $target_library_lvt"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db
+set link_library "$target_library $synthetic_library"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db /home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/dw_foundation.sldb /home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/standard.sldb
+set LIB_PDB_nvt "/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/physical_compiler/tcbn45gsbwp_110a/HVH_0d5_0/tcbn45gsbwp_9lm7X1ZRDL.pdb"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/physical_compiler/tcbn45gsbwp_110a/HVH_0d5_0/tcbn45gsbwp_9lm7X1ZRDL.pdb
+set LIB_PDB_hvt "/home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/physical_compiler/tcbn45gsbwphvt_110a/HVH_0d5_0/tcbn45gsbwphvt_9lm7X1ZRDL.pdb"
+/home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/physical_compiler/tcbn45gsbwphvt_110a/HVH_0d5_0/tcbn45gsbwphvt_9lm7X1ZRDL.pdb
+set LIB_PDB_lvt "/home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/physical_compiler/tcbn45gsbwplvt_110a/HVH_0d5_0/tcbn45gsbwplvt_9lm7X1ZRDL.pdb"
+/home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/physical_compiler/tcbn45gsbwplvt_110a/HVH_0d5_0/tcbn45gsbwplvt_9lm7X1ZRDL.pdb
+set LIB_PDB "$LIB_PDB_nvt $LIB_PDB_hvt $LIB_PDB_lvt"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/physical_compiler/tcbn45gsbwp_110a/HVH_0d5_0/tcbn45gsbwp_9lm7X1ZRDL.pdb /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/physical_compiler/tcbn45gsbwphvt_110a/HVH_0d5_0/tcbn45gsbwphvt_9lm7X1ZRDL.pdb /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/physical_compiler/tcbn45gsbwplvt_110a/HVH_0d5_0/tcbn45gsbwplvt_9lm7X1ZRDL.pdb
+set LIB_DB "$target_library"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db
+set TECH_FILE_nvt "/home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf
+set TECH_FILE_hvt "/home/TSMC/45GS_GP_FRONT_HVT/digital/Back_End/milkyway/tcbn45gsbwphvt_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf"
+/home/TSMC/45GS_GP_FRONT_HVT/digital/Back_End/milkyway/tcbn45gsbwphvt_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf
+set TECH_FILE_lvt "/home/TSMC/45GS_GP_FRONT_LVT/digital/Back_End/milkyway/tcbn45gsbwplvt_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf"
+/home/TSMC/45GS_GP_FRONT_LVT/digital/Back_End/milkyway/tcbn45gsbwplvt_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf
+set TECH_FILE "$TECH_FILE_nvt $TECH_FILE_hvt $TECH_FILE_lvt"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf /home/TSMC/45GS_GP_FRONT_HVT/digital/Back_End/milkyway/tcbn45gsbwphvt_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf /home/TSMC/45GS_GP_FRONT_LVT/digital/Back_End/milkyway/tcbn45gsbwplvt_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf
+set REF_LIB_nvt "/home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/frame_only_HVH_0d5_0/tcbn45gsbwp/"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/frame_only_HVH_0d5_0/tcbn45gsbwp/
+set REF_LIB_hvt "/home/TSMC/45GS_GP_FRONT_HVT/digital/Back_End/milkyway/tcbn45gsbwphvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwphvt/"
+/home/TSMC/45GS_GP_FRONT_HVT/digital/Back_End/milkyway/tcbn45gsbwphvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwphvt/
+set REF_LIB_lvt "/home/TSMC/45GS_GP_FRONT_LVT/digital/Back_End/milkyway/tcbn45gsbwplvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwplvt/"
+/home/TSMC/45GS_GP_FRONT_LVT/digital/Back_End/milkyway/tcbn45gsbwplvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwplvt/
+set REF_LIB "$REF_LIB_nvt $REF_LIB_hvt $REF_LIB_lvt"
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/frame_only_HVH_0d5_0/tcbn45gsbwp/ /home/TSMC/45GS_GP_FRONT_HVT/digital/Back_End/milkyway/tcbn45gsbwphvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwphvt/ /home/TSMC/45GS_GP_FRONT_LVT/digital/Back_End/milkyway/tcbn45gsbwplvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwplvt/
+set target_library [concat $LIB_DB $target_library]
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db /home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db
+set physical_library [concat $LIB_PDB]
+/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/physical_compiler/tcbn45gsbwp_110a/HVH_0d5_0/tcbn45gsbwp_9lm7X1ZRDL.pdb /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/physical_compiler/tcbn45gsbwphvt_110a/HVH_0d5_0/tcbn45gsbwphvt_9lm7X1ZRDL.pdb /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/physical_compiler/tcbn45gsbwplvt_110a/HVH_0d5_0/tcbn45gsbwplvt_9lm7X1ZRDL.pdb
+if {[file exists "MWDESIGN"]} {
+        exec rm -r MWDESIGN
+}
+create_mw_lib -technology $TECH_FILE_nvt -mw_reference_library "$REF_LIB_nvt $REF_LIB_hvt $REF_LIB_lvt" MWDESIGN
+Start to load technology file /home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf.
+Warning: Layer 'AP' is missing the attribute 'minArea'. (line 791) (TFCHK-012)
+Warning: Cut layer 'VIA1' has a non-cross primary default ContactCode 'VIA12'. (line 1256) (TFCHK-092)
+Warning: DesignRule is missing the attribute 'endOfLineEncWidthThreshold'. (line 1922) (TFCHK-012)
+Warning: DesignRule is missing the attribute 'endOfLineEncWidthThreshold'. (line 1930) (TFCHK-012)
+Warning: DesignRule is missing the attribute 'endOfLineEncWidthThreshold'. (line 1938) (TFCHK-012)
+Warning: DesignRule is missing the attribute 'endOfLineEncWidthThreshold'. (line 1946) (TFCHK-012)
+Warning: DesignRule is missing the attribute 'endOfLineEncWidthThreshold'. (line 1954) (TFCHK-012)
+Warning: DesignRule is missing the attribute 'endOfLineEncWidthThreshold'. (line 1962) (TFCHK-012)
+Warning: DesignRule is missing the attribute 'endOfLineEncWidthThreshold'. (line 1970) (TFCHK-012)
+Warning: Layer 'M1' has a pitch 0.14 that does not match the recommended wire-to-via pitch 0.17. (TFCHK-049)
+Warning: Layer 'M8' has a pitch 0.14 that does not match the recommended wire-to-via pitch 0.305 or 0.365. (TFCHK-049)
+Warning: Layer 'M9' has a pitch 0.8 that does not match the recommended wire-to-via pitch 2.6. (TFCHK-049)
+Warning: Layer 'M3' has a pitch 0.14 that does not match the doubled pitch 0.28 or tripled pitch 0.42. (TFCHK-050)
+Warning: Layer 'M4' has a pitch 0.14 that does not match the doubled pitch 0.28 or tripled pitch 0.42. (TFCHK-050)
+Warning: Layer 'M5' has a pitch 0.14 that does not match the doubled pitch 0.28 or tripled pitch 0.42. (TFCHK-050)
+Warning: Layer 'M6' has a pitch 0.14 that does not match the doubled pitch 0.28 or tripled pitch 0.42. (TFCHK-050)
+Warning: Layer 'M7' has a pitch 0.14 that does not match the doubled pitch 0.28 or tripled pitch 0.42. (TFCHK-050)
+Warning: Layer 'M8' has a pitch 0.14 that does not match the doubled pitch 0.28 or tripled pitch 0.42. (TFCHK-050)
+Warning: Layer 'M9' has a pitch 0.8 that does not match the doubled pitch 0.28 or tripled pitch 0.42. (TFCHK-050)
+Warning: Layer 'AP' has a pitch 5 that does not match the doubled pitch 0.28 or tripled pitch 0.42. (TFCHK-050)
+Warning: CapModel sections are missing. Capacitance models should be loaded with a TLU+ file later. (TFCHK-084)
+Technology file /home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/techfiles/HVH_0d5_0/tsmcn45_9lm7X1ZRDL.tf has been loaded successfully.
+open_mw_lib MWDESIGN
+Warning: Reference Library Inconsistent With Main Library
+Reference Library: /home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/frame_only_HVH_0d5_0/tcbn45gsbwp (MWLIBP-300)
+Warning: Inconsistent Number Of Metal Layers:
+        10 (Main Library) <==> 11 (Reference Library). (MWLIBP-301)
+Warning: Inconsistent Data for Layer 85
+        Main Library (MWDESIGN)     |   Reference Library (tcbn45gsbwp)
+        Mask Name      via9         |   via10    (MWLIBP-319)
+Warning: Inconsistent Data for Layer 74
+        Main Library (MWDESIGN)     |   Reference Library (tcbn45gsbwp)
+        Mask Name      metal10      |   metal11  (MWLIBP-319)
+Warning: Inconsistent Data for Contact Code 20
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA2 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M2 (0, 50)        |     M9 (80, 80)
+        Upper Layer     M3 (50, 0)        |     M10 (80, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 21
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA3 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M3 (50, 0)        |     M1 (0, 50)
+        Upper Layer     M4 (0, 50)        |     M2 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 22
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA4 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M4 (0, 50)        |     M2 (0, 50)
+        Upper Layer     M5 (50, 0)        |     M3 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 23
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA5 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M5 (50, 0)        |     M3 (50, 0)
+        Upper Layer     M6 (0, 50)        |     M4 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 24
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA6 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M6 (0, 50)        |     M4 (0, 50)
+        Upper Layer     M7 (50, 0)        |     M5 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 25
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA7 (70, 70)     |     VIA5 (70, 70)
+        Lower Layer     M7 (50, 0)        |     M5 (50, 0)
+        Upper Layer     M8 (0, 50)        |     M6 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 26
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA8 (360, 360)   |     VIA6 (70, 70)
+        Lower Layer     M8 (20, 80)       |     M6 (0, 50)
+        Upper Layer     M9 (80, 20)       |     M7 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 27
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA1 (70, 70)     |     VIA7 (70, 70)
+        Lower Layer     M1 (30, 30)       |     M7 (50, 0)
+        Upper Layer     M2 (30, 30)       |     M8 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 28
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA2 (70, 70)     |     VIA8 (360, 360)
+        Lower Layer     M2 (30, 30)       |     M8 (20, 80)
+        Upper Layer     M3 (30, 30)       |     M9 (80, 20)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 29
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA3 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M3 (30, 30)       |     M9 (80, 20)
+        Upper Layer     M4 (30, 30)       |     M10 (20, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 30
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA4 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M4 (30, 30)       |     M1 (30, 30)
+        Upper Layer     M5 (30, 30)       |     M2 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 31
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA5 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M5 (30, 30)       |     M2 (30, 30)
+        Upper Layer     M6 (30, 30)       |     M3 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 32
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA6 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M6 (30, 30)       |     M3 (30, 30)
+        Upper Layer     M7 (30, 30)       |     M4 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 33
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA7 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M7 (30, 30)       |     M4 (30, 30)
+        Upper Layer     M8 (30, 30)       |     M5 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 34
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA8 (360, 360)   |     VIA5 (70, 70)
+        Lower Layer     M8 (80, 80)       |     M5 (30, 30)
+        Upper Layer     M9 (80, 80)       |     M6 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 35
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       RV (3000, 3000)   |     VIA6 (70, 70)
+        Lower Layer     M9 (500, 500)     |     M6 (30, 30)
+        Upper Layer     AP (500, 500)     |     M7 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 11
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA1 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M1 (30, 0)        |     M9 (80, 20)
+        Upper Layer     M2 (30, 0)        |     M10 (20, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 12
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA2 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M2 (30, 0)        |     M1 (30, 0)
+        Upper Layer     M3 (30, 0)        |     M2 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 13
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA3 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M3 (30, 0)        |     M2 (30, 0)
+        Upper Layer     M4 (30, 0)        |     M3 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 14
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA4 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M4 (30, 0)        |     M3 (30, 0)
+        Upper Layer     M5 (30, 0)        |     M4 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 15
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA5 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M5 (30, 0)        |     M4 (30, 0)
+        Upper Layer     M6 (30, 0)        |     M5 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 16
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA6 (70, 70)     |     VIA5 (70, 70)
+        Lower Layer     M6 (30, 0)        |     M5 (30, 0)
+        Upper Layer     M7 (30, 0)        |     M6 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 17
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA7 (70, 70)     |     VIA6 (70, 70)
+        Lower Layer     M7 (30, 0)        |     M6 (30, 0)
+        Upper Layer     M8 (30, 0)        |     M7 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 18
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA8 (360, 360)   |     VIA7 (70, 70)
+        Lower Layer     M8 (80, 80)       |     M7 (30, 0)
+        Upper Layer     M9 (80, 80)       |     M8 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 19
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwp)
+        Cut Layer       VIA1 (70, 70)     |     VIA8 (360, 360)
+        Lower Layer     M1 (0, 50)        |     M8 (80, 80)
+        Upper Layer     M2 (0, 50)        |     M9 (80, 80)      (MWLIBP-324)
+Warning: Reference Library Inconsistent With Main Library
+Reference Library: /home/TSMC/45GS_GP_FRONT_HVT/digital/Back_End/milkyway/tcbn45gsbwphvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwphvt (MWLIBP-300)
+Warning: Inconsistent Number Of Metal Layers:
+        10 (Main Library) <==> 11 (Reference Library). (MWLIBP-301)
+Warning: Inconsistent Data for Layer 85
+        Main Library (MWDESIGN)     |   Reference Library (tcbn45gsbwphvt)
+        Mask Name      via9         |   via10    (MWLIBP-319)
+Warning: Inconsistent Data for Layer 74
+        Main Library (MWDESIGN)     |   Reference Library (tcbn45gsbwphvt)
+        Mask Name      metal10      |   metal11  (MWLIBP-319)
+Warning: Inconsistent Data for Contact Code 20
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA2 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M2 (0, 50)        |     M9 (80, 80)
+        Upper Layer     M3 (50, 0)        |     M10 (80, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 21
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA3 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M3 (50, 0)        |     M1 (0, 50)
+        Upper Layer     M4 (0, 50)        |     M2 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 22
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA4 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M4 (0, 50)        |     M2 (0, 50)
+        Upper Layer     M5 (50, 0)        |     M3 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 23
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA5 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M5 (50, 0)        |     M3 (50, 0)
+        Upper Layer     M6 (0, 50)        |     M4 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 24
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA6 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M6 (0, 50)        |     M4 (0, 50)
+        Upper Layer     M7 (50, 0)        |     M5 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 25
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA7 (70, 70)     |     VIA5 (70, 70)
+        Lower Layer     M7 (50, 0)        |     M5 (50, 0)
+        Upper Layer     M8 (0, 50)        |     M6 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 26
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA8 (360, 360)   |     VIA6 (70, 70)
+        Lower Layer     M8 (20, 80)       |     M6 (0, 50)
+        Upper Layer     M9 (80, 20)       |     M7 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 27
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA1 (70, 70)     |     VIA7 (70, 70)
+        Lower Layer     M1 (30, 30)       |     M7 (50, 0)
+        Upper Layer     M2 (30, 30)       |     M8 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 28
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA2 (70, 70)     |     VIA8 (360, 360)
+        Lower Layer     M2 (30, 30)       |     M8 (20, 80)
+        Upper Layer     M3 (30, 30)       |     M9 (80, 20)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 29
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA3 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M3 (30, 30)       |     M9 (80, 20)
+        Upper Layer     M4 (30, 30)       |     M10 (20, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 30
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA4 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M4 (30, 30)       |     M1 (30, 30)
+        Upper Layer     M5 (30, 30)       |     M2 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 31
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA5 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M5 (30, 30)       |     M2 (30, 30)
+        Upper Layer     M6 (30, 30)       |     M3 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 32
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA6 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M6 (30, 30)       |     M3 (30, 30)
+        Upper Layer     M7 (30, 30)       |     M4 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 33
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA7 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M7 (30, 30)       |     M4 (30, 30)
+        Upper Layer     M8 (30, 30)       |     M5 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 34
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA8 (360, 360)   |     VIA5 (70, 70)
+        Lower Layer     M8 (80, 80)       |     M5 (30, 30)
+        Upper Layer     M9 (80, 80)       |     M6 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 35
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       RV (3000, 3000)   |     VIA6 (70, 70)
+        Lower Layer     M9 (500, 500)     |     M6 (30, 30)
+        Upper Layer     AP (500, 500)     |     M7 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 11
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA1 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M1 (30, 0)        |     M9 (80, 20)
+        Upper Layer     M2 (30, 0)        |     M10 (20, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 12
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA2 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M2 (30, 0)        |     M1 (30, 0)
+        Upper Layer     M3 (30, 0)        |     M2 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 13
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA3 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M3 (30, 0)        |     M2 (30, 0)
+        Upper Layer     M4 (30, 0)        |     M3 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 14
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA4 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M4 (30, 0)        |     M3 (30, 0)
+        Upper Layer     M5 (30, 0)        |     M4 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 15
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA5 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M5 (30, 0)        |     M4 (30, 0)
+        Upper Layer     M6 (30, 0)        |     M5 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 16
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA6 (70, 70)     |     VIA5 (70, 70)
+        Lower Layer     M6 (30, 0)        |     M5 (30, 0)
+        Upper Layer     M7 (30, 0)        |     M6 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 17
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA7 (70, 70)     |     VIA6 (70, 70)
+        Lower Layer     M7 (30, 0)        |     M6 (30, 0)
+        Upper Layer     M8 (30, 0)        |     M7 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 18
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA8 (360, 360)   |     VIA7 (70, 70)
+        Lower Layer     M8 (80, 80)       |     M7 (30, 0)
+        Upper Layer     M9 (80, 80)       |     M8 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 19
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwphvt)
+        Cut Layer       VIA1 (70, 70)     |     VIA8 (360, 360)
+        Lower Layer     M1 (0, 50)        |     M8 (80, 80)
+        Upper Layer     M2 (0, 50)        |     M9 (80, 80)      (MWLIBP-324)
+Warning: Reference Library Inconsistent With Main Library
+Reference Library: /home/TSMC/45GS_GP_FRONT_LVT/digital/Back_End/milkyway/tcbn45gsbwplvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwplvt (MWLIBP-300)
+Warning: Inconsistent Number Of Metal Layers:
+        10 (Main Library) <==> 11 (Reference Library). (MWLIBP-301)
+Warning: Inconsistent Data for Layer 85
+        Main Library (MWDESIGN)     |   Reference Library (tcbn45gsbwplvt)
+        Mask Name      via9         |   via10    (MWLIBP-319)
+Warning: Inconsistent Data for Layer 74
+        Main Library (MWDESIGN)     |   Reference Library (tcbn45gsbwplvt)
+        Mask Name      metal10      |   metal11  (MWLIBP-319)
+Warning: Inconsistent Data for Contact Code 20
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA2 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M2 (0, 50)        |     M9 (80, 80)
+        Upper Layer     M3 (50, 0)        |     M10 (80, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 21
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA3 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M3 (50, 0)        |     M1 (0, 50)
+        Upper Layer     M4 (0, 50)        |     M2 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 22
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA4 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M4 (0, 50)        |     M2 (0, 50)
+        Upper Layer     M5 (50, 0)        |     M3 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 23
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA5 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M5 (50, 0)        |     M3 (50, 0)
+        Upper Layer     M6 (0, 50)        |     M4 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 24
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA6 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M6 (0, 50)        |     M4 (0, 50)
+        Upper Layer     M7 (50, 0)        |     M5 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 25
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA7 (70, 70)     |     VIA5 (70, 70)
+        Lower Layer     M7 (50, 0)        |     M5 (50, 0)
+        Upper Layer     M8 (0, 50)        |     M6 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 26
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA8 (360, 360)   |     VIA6 (70, 70)
+        Lower Layer     M8 (20, 80)       |     M6 (0, 50)
+        Upper Layer     M9 (80, 20)       |     M7 (50, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 27
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA1 (70, 70)     |     VIA7 (70, 70)
+        Lower Layer     M1 (30, 30)       |     M7 (50, 0)
+        Upper Layer     M2 (30, 30)       |     M8 (0, 50)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 28
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA2 (70, 70)     |     VIA8 (360, 360)
+        Lower Layer     M2 (30, 30)       |     M8 (20, 80)
+        Upper Layer     M3 (30, 30)       |     M9 (80, 20)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 29
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA3 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M3 (30, 30)       |     M9 (80, 20)
+        Upper Layer     M4 (30, 30)       |     M10 (20, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 30
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA4 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M4 (30, 30)       |     M1 (30, 30)
+        Upper Layer     M5 (30, 30)       |     M2 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 31
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA5 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M5 (30, 30)       |     M2 (30, 30)
+        Upper Layer     M6 (30, 30)       |     M3 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 32
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA6 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M6 (30, 30)       |     M3 (30, 30)
+        Upper Layer     M7 (30, 30)       |     M4 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 33
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA7 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M7 (30, 30)       |     M4 (30, 30)
+        Upper Layer     M8 (30, 30)       |     M5 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 34
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA8 (360, 360)   |     VIA5 (70, 70)
+        Lower Layer     M8 (80, 80)       |     M5 (30, 30)
+        Upper Layer     M9 (80, 80)       |     M6 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 35
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       RV (3000, 3000)   |     VIA6 (70, 70)
+        Lower Layer     M9 (500, 500)     |     M6 (30, 30)
+        Upper Layer     AP (500, 500)     |     M7 (30, 30)      (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 11
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA1 (70, 70)     |     VIA9 (360, 360)
+        Lower Layer     M1 (30, 0)        |     M9 (80, 20)
+        Upper Layer     M2 (30, 0)        |     M10 (20, 80)     (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 12
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA2 (70, 70)     |     VIA1 (70, 70)
+        Lower Layer     M2 (30, 0)        |     M1 (30, 0)
+        Upper Layer     M3 (30, 0)        |     M2 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 13
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA3 (70, 70)     |     VIA2 (70, 70)
+        Lower Layer     M3 (30, 0)        |     M2 (30, 0)
+        Upper Layer     M4 (30, 0)        |     M3 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 14
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA4 (70, 70)     |     VIA3 (70, 70)
+        Lower Layer     M4 (30, 0)        |     M3 (30, 0)
+        Upper Layer     M5 (30, 0)        |     M4 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 15
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA5 (70, 70)     |     VIA4 (70, 70)
+        Lower Layer     M5 (30, 0)        |     M4 (30, 0)
+        Upper Layer     M6 (30, 0)        |     M5 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 16
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA6 (70, 70)     |     VIA5 (70, 70)
+        Lower Layer     M6 (30, 0)        |     M5 (30, 0)
+        Upper Layer     M7 (30, 0)        |     M6 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 17
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA7 (70, 70)     |     VIA6 (70, 70)
+        Lower Layer     M7 (30, 0)        |     M6 (30, 0)
+        Upper Layer     M8 (30, 0)        |     M7 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 18
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA8 (360, 360)   |     VIA7 (70, 70)
+        Lower Layer     M8 (80, 80)       |     M7 (30, 0)
+        Upper Layer     M9 (80, 80)       |     M8 (30, 0)       (MWLIBP-324)
+Warning: Inconsistent Data for Contact Code 19
+        Main Library (MWDESIGN)           |     Reference Library (tcbn45gsbwplvt)
+        Cut Layer       VIA1 (70, 70)     |     VIA8 (360, 360)
+        Lower Layer     M1 (0, 50)        |     M8 (80, 80)
+        Upper Layer     M2 (0, 50)        |     M9 (80, 80)      (MWLIBP-324)
+{MWDESIGN}
+analyze -format vhdl /home/jiaoxun/Dropbox/input_based_prediction/operator/$dname.vhdl
+Running PRESTO HDLC
+Compiling Entity Declaration COMPRESSOR_3_2
+Compiling Architecture ARCH of COMPRESSOR_3_2
+Warning:  /home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl:22: The architecture arch has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration INTADDER_42_F100_UID15
+Compiling Architecture ARCH of INTADDER_42_F100_UID15
+Compiling Entity Declaration INTMULTIPLIER_USINGDSP_24_24_48_UNSIGNED_UID4
+Compiling Architecture ARCH of INTMULTIPLIER_USINGDSP_24_24_48_UNSIGNED_UID4
+Warning:  /home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl:98: The architecture arch has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration INTADDER_33_F100_UID23
+Compiling Architecture ARCH of INTADDER_33_F100_UID23
+Compiling Entity Declaration FPMULTIPLIER_8_23_8_23_8_23_UID2
+Compiling Architecture ARCH of FPMULTIPLIER_8_23_8_23_8_23_UID2
+Warning:  /home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl:359: The architecture arch has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration FPMULTIPLIER_8_23_8_23_8_23_UID2_WRAPPER
+Compiling Architecture ARCH of FPMULTIPLIER_8_23_8_23_8_23_UID2_WRAPPER
+Warning:  /home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl:475: The architecture arch has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+Loading db file '/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db'
+Loading db file '/home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db'
+Loading db file '/home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db'
+Loading db file '/home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/standard.sldb'
+1
+elaborate $dname
+Loading db file '/home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/gtech.db'
+  Loading link library 'tcbn45gsbwpwc'
+  Loading link library 'tcbn45gsbwphvtwc'
+  Loading link library 'tcbn45gsbwplvtwc'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+        in routine FPMultiplier_8_23_8_23_8_23_uid2_Wrapper line 487 in file
+                '/home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     i_X_d1_reg      | Flip-flop |  34   |  Y  | N  | N  | N  | N  | N  | N  |
+|     i_Y_d1_reg      | Flip-flop |  34   |  Y  | N  | N  | N  | N  | N  | N  |
+|     o_R_d1_reg      | Flip-flop |  34   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper'.
+Information: Building the design 'FPMultiplier_8_23_8_23_8_23_uid2'. (HDL-193)
+Warning:  /home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl:441: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 419 in file
+        '/home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           419            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 441 in file
+        '/home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           441            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 446 in file
+        '/home/jiaoxun/Dropbox/input_based_prediction/operator/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.vhdl'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           446            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'IntMultiplier_UsingDSP_24_24_48_unsigned_uid4'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'IntAdder_33_f100_uid23'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'IntAdder_42_f100_uid15'. (HDL-193)
+Presto compilation completed successfully.
+1
+link
+
+  Linking design 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  tcbn45gsbwpwc (library)     /home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db
+  tcbn45gsbwphvtwc (library)  /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db
+  tcbn45gsbwplvtwc (library)  /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db
+  dw_foundation.sldb (library) /home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/dw_foundation.sldb
+
+1
+#08/05/2016 change the clock constraint from 3.0ns to 2.0ns
+create_clock -period 2.0 clk
+1
+set_ideal_network {clk}
+1
+set_ideal_network {rst}
+1
+set_input_delay 0.01 -max -clock clk -add_delay {X Y}
+1
+set_output_delay 0.01 -max -clock clk -add_delay  {R}
+1
+set_max_leakage_power 0
+Information: Command 'set_max_leakage_power' is obsolete and is being ignored. (INFO-102)
+0
+set_max_dynamic_power 0
+Information: Command 'set_max_dynamic_power' is obsolete and is being ignored. (INFO-102)
+0
+set Coordinates_PLACEMENT [list 0.0 0.0 100.0 400.0]
+0.0 0.0 100.0 400.0
+set_placement_area -coordinate $Coordinates_PLACEMENT -fixed
+Information: linking reference library : /home/TSMC/45GS_GP_FRONT_NVT/digital/Back_End/milkyway/tcbn45gsbwp_120a/frame_only_HVH_0d5_0/tcbn45gsbwp. (PSYN-878)
+Information: linking reference library : /home/TSMC/45GS_GP_FRONT_HVT/digital/Back_End/milkyway/tcbn45gsbwphvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwphvt. (PSYN-878)
+Information: linking reference library : /home/TSMC/45GS_GP_FRONT_LVT/digital/Back_End/milkyway/tcbn45gsbwplvt_120a/frame_only_HVH_0d5_0/tcbn45gsbwplvt. (PSYN-878)
+
+  Linking design 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  tcbn45gsbwpwc (library)     /home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db
+  tcbn45gsbwphvtwc (library)  /home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db
+  tcbn45gsbwplvtwc (library)  /home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db
+  dw_foundation.sldb (library) /home/tools/DC_2/syn/J-2014.09-SP5-3/libraries/syn/dw_foundation.sldb
+
+Warning: layerNumber 40 does not exist or is out of range. (MWLIBP-311)
+Information: No preferred routing direction is found for design layer M1. Automatically deriving direction H. (DCT-035)
+Information: No preferred routing direction is found for design layer M2. Automatically deriving direction V. (DCT-035)
+Information: No preferred routing direction is found for design layer M3. Automatically deriving direction H. (DCT-035)
+Information: No preferred routing direction is found for design layer M4. Automatically deriving direction V. (DCT-035)
+Information: No preferred routing direction is found for design layer M5. Automatically deriving direction H. (DCT-035)
+Information: No preferred routing direction is found for design layer M6. Automatically deriving direction V. (DCT-035)
+Information: No preferred routing direction is found for design layer M7. Automatically deriving direction H. (DCT-035)
+Information: No preferred routing direction is found for design layer M8. Automatically deriving direction V. (DCT-035)
+Information: No preferred routing direction is found for design layer M9. Automatically deriving direction H. (DCT-035)
+Information: No preferred routing direction is found for design layer AP. Automatically deriving direction H. (DCT-035)
+1
+compile_ultra 
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: No TLUPlus file identified. (DCT-034)
+Warning: Layer 'M1' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M2' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M3' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M4' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M5' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M6' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M7' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M8' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M9' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'AP' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Information: Running optimization using a maximum of 2 cores. (OPT-1500)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | J-2014.09-DWBB_201409.5.2 |   *     |
+| Licensed DW Building Blocks        | J-2014.09-DWBB_201409.5.2 |   *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 62 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is library 1D. (RCEX-015)
+Information: Library Derived Cap for layer M1 : 2.6e-05 2.6e-05 (RCEX-011)
+Information: Library Derived Res for layer M1 : 0.0044 0.0044 (RCEX-011)
+Information: Library Derived Cap for layer M2 : 7.5e-06 7.5e-06 (RCEX-011)
+Information: Library Derived Res for layer M2 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M3 : 4e-06 4e-06 (RCEX-011)
+Information: Library Derived Res for layer M3 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M4 : 2.8e-06 2.8e-06 (RCEX-011)
+Information: Library Derived Res for layer M4 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M5 : 2.1e-06 2.1e-06 (RCEX-011)
+Information: Library Derived Res for layer M5 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M6 : 1.7e-06 1.7e-06 (RCEX-011)
+Information: Library Derived Res for layer M6 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M7 : 1.4e-06 1.4e-06 (RCEX-011)
+Information: Library Derived Res for layer M7 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M8 : 1.2e-06 1.2e-06 (RCEX-011)
+Information: Library Derived Res for layer M8 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M9 : 3.9e-06 3.9e-06 (RCEX-011)
+Information: Library Derived Res for layer M9 : 5.5e-05 5.5e-05 (RCEX-011)
+Information: Library Derived Cap for layer AP : 1.4e-05 1.4e-05 (RCEX-011)
+Information: Library Derived Res for layer AP : 1e-05 1e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 8.7e-06 8.7e-06 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.0027 0.0027 (RCEX-011)
+Information: Library Derived Vertical Cap : 3.3e-06 3.3e-06 (RCEX-011)
+Information: Library Derived Vertical Res : 0.004 0.004 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.0054 0.0054 (RCEX-011)
+Loaded alib file './alib-52/tcbn45gsbwpwc.db.alib' (placeholder)
+Loaded alib file './alib-52/tcbn45gsbwphvtwc.db.alib'
+Loaded alib file './alib-52/tcbn45gsbwplvtwc.db.alib' (placeholder)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy test before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy test/SignificandMultiplication before Pass 1 (OPT-776)
+Information: Ungrouping 2 of 5 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper'
+ Implement Synthetic for 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper'.
+  Processing 'IntAdder_42_f100_uid15'
+ Implement Synthetic for 'IntAdder_42_f100_uid15'.
+  Processing 'IntAdder_33_f100_uid23'
+ Implement Synthetic for 'IntAdder_33_f100_uid23'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELBWP' in the library 'tcbn45gsbwpwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP' in the library 'tcbn45gsbwpwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIELBWPHVT' in the library 'tcbn45gsbwphvtwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWPHVT' in the library 'tcbn45gsbwphvtwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIELBWPLVT' in the library 'tcbn45gsbwplvtwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWPLVT' in the library 'tcbn45gsbwplvtwc' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper'. (DDB-72)
+  Mapping Optimization (Phase 1)
+
+  Beginning Global Optimizations
+  ------------------------------
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:34    3623.6      1.14      30.7       0.0                           20607.9141
+    0:01:36    3816.1      0.69      20.2       0.0                           23028.0684
+    0:01:36    3816.1      0.69      20.2       0.0                           23028.0684
+  Mapping 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper_DW_mult_uns_9'
+  Mapping 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper_DW_mult_uns_10'
+  Mapping 'IntAdder_42_f100_uid15_DP_OP_5J1_123_9050_3'
+    0:01:38    4477.4      0.77      22.9       0.0                           27389.2090
+    0:01:39    4467.2      0.72      21.5       0.0                           27349.2500
+  Mapping 'IntAdder_33_f100_uid23_DP_OP_5J1_124_3656_7'
+Information: Added key list 'DesignWare' to design 'IntAdder_33_f100_uid23'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'IntAdder_42_f100_uid15'. (DDB-72)
+    0:01:42    4019.8      0.61      17.8       0.0                           24366.8105
+    0:01:42    4019.8      0.61      17.8       0.0                           24366.8105
+    0:01:48    4503.5      0.41      12.0       0.0                           29040.2988
+    0:01:48    4503.5      0.41      12.0       0.0                           29040.2988
+    0:01:49    4505.1      0.41      12.2       0.0                           29070.8887
+    0:01:57    4545.1      0.38      11.2       0.0                           29249.0371
+Loading db file '/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db'
+Loading db file '/home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db'
+Loading db file '/home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db'
+  Loading design 'FPMultiplier_8_23_8_23_8_23_uid2_Wrapper'
+Information: The library cell 'TIELBWP' in the library 'tcbn45gsbwpwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP' in the library 'tcbn45gsbwpwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIELBWPHVT' in the library 'tcbn45gsbwphvtwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWPHVT' in the library 'tcbn45gsbwphvtwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIELBWPLVT' in the library 'tcbn45gsbwplvtwc' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWPLVT' in the library 'tcbn45gsbwplvtwc' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is library 1D. (RCEX-015)
+Information: Library Derived Cap for layer M1 : 2.6e-05 2.6e-05 (RCEX-011)
+Information: Library Derived Res for layer M1 : 0.0044 0.0044 (RCEX-011)
+Information: Library Derived Cap for layer M2 : 7.5e-06 7.5e-06 (RCEX-011)
+Information: Library Derived Res for layer M2 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M3 : 4e-06 4e-06 (RCEX-011)
+Information: Library Derived Res for layer M3 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M4 : 2.8e-06 2.8e-06 (RCEX-011)
+Information: Library Derived Res for layer M4 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M5 : 2.1e-06 2.1e-06 (RCEX-011)
+Information: Library Derived Res for layer M5 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M6 : 1.7e-06 1.7e-06 (RCEX-011)
+Information: Library Derived Res for layer M6 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M7 : 1.4e-06 1.4e-06 (RCEX-011)
+Information: Library Derived Res for layer M7 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M8 : 1.2e-06 1.2e-06 (RCEX-011)
+Information: Library Derived Res for layer M8 : 0.004 0.004 (RCEX-011)
+Information: Library Derived Cap for layer M9 : 3.9e-06 3.9e-06 (RCEX-011)
+Information: Library Derived Res for layer M9 : 5.5e-05 5.5e-05 (RCEX-011)
+Information: Library Derived Cap for layer AP : 1.4e-05 1.4e-05 (RCEX-011)
+Information: Library Derived Res for layer AP : 1e-05 1e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 8.7e-06 8.7e-06 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.0027 0.0027 (RCEX-011)
+Information: Library Derived Vertical Cap : 3.3e-06 3.3e-06 (RCEX-011)
+Information: Library Derived Vertical Res : 0.004 0.004 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.0054 0.0054 (RCEX-011)
+Warning: Layer 'M1' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M2' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M3' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M4' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M5' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M6' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M7' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M8' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M9' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'AP' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+
+...25%...50%...75%...100% done.
+
+
+ Collecting Buffer Trees ... Found 58
+
+ Processing Buffer Trees ... 
+
+    [6]  10% ...
+    [12]  20% ...
+    [18]  30% ...
+    [24]  40% ...
+    [30]  50% ...
+    [36]  60% ...
+    [42]  70% ...
+    [48]  80% ...
+    [54]  90% ...
+    [58] 100% Done ...
+
+
+Information: Automatic high-fanout synthesis deletes 131 cells. (HFS-802)
+Information: Automatic high-fanout synthesis adds 44 new cells. (PSYN-864)
+
+
+
+  Beginning Timing Optimizations
+  ------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:17    4420.2      0.81      24.0       0.0                           27993.4746
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+    0:02:17    4420.2      0.81      24.0       0.0                           27993.4746
+    0:02:19    4093.5      0.81      24.8       0.0                           22229.9453
+    0:02:19    4093.5      0.81      24.8       0.0                           22229.9453
+    0:02:23    4212.3      0.57      16.9       0.0                           23500.8223
+    0:02:23    4212.3      0.57      16.9       0.0                           23500.8223
+    0:02:32    4720.1      0.44      13.2       0.0                           27969.1055
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:02:46    4720.1      0.44      13.2       0.0                           27969.1055
+    0:02:47    4738.5      0.44      13.0       0.0                           28173.7500
+    0:02:47    4738.5      0.44      13.0       0.0                           28173.7500
+    0:02:49    4830.0      0.43      12.6       0.0                           29074.0527
+    0:02:49    4830.0      0.43      12.6       0.0                           29074.0527
+    0:03:07    5401.5      0.35      10.3       0.0                           33903.2148
+    0:03:14    5401.5      0.35      10.3       0.0                           33903.2148
+    0:03:22    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:22    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:22    5250.5      0.00       0.0       0.0                           51166.3789
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:31    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:32    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:32    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:32    5250.5      0.00       0.0       0.0                           51166.3789
+    0:03:36    4859.1      0.02       0.1       0.0                           43410.0703
+
+
+  Beginning High Effort Optimization Phase
+  ----------------------------------------
+
+
+  Beginning Timing Optimization
+  -----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:36    4859.1      0.02       0.1       0.0                           43410.0703
+    0:03:36    4859.1      0.02       0.1       0.0                           43410.0703
+    0:03:39    4153.7      0.00       0.0       0.0                           49967.6758
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:03:44    4153.7      0.00       0.0       0.0                           49967.6758
+    0:03:44    4153.7      0.00       0.0       0.0                           49967.6758
+    0:03:51    4153.7      0.00       0.0       0.0                           49967.6758
+    0:03:51    4153.7      0.00       0.0       0.0                           49967.6758
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:04:00    4153.7      0.00       0.0       0.0                           49967.6758
+    0:04:00    4153.7      0.00       0.0       0.0                           49967.6758
+    0:04:00    4153.7      0.00       0.0       0.0                           49967.6758
+    0:04:00    4153.7      0.00       0.0       0.0                           49967.6758
+
+
+  High Effort Optimization Phase Complete
+  ---------------------------------------
+
+    0:04:00    4153.7      0.00       0.0       0.0                           49967.6758
+    0:04:03    4152.3      0.00       0.0       0.0                           47961.8477
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+    0:04:03    4153.3      0.00       0.0       0.0                           46866.9570
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Loading db file '/home/TSMC/45GS_GP_FRONT_NVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwp_120a/tcbn45gsbwpwc.db'
+Loading db file '/home/TSMC/45GS_GP_FRONT_HVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwc.db'
+Loading db file '/home/TSMC/45GS_GP_FRONT_LVT/digital/Front_End/timing_power_noise/NLDM/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwc.db'
+1
+write -format verilog -hierarchy -output ../PS/$dname.ps.v
+Writing verilog file '/home/jiaoxun/DAC2018/PS/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.ps.v'.
+Warning: Verilog writer has added 1 nets to module FPMultiplier_8_23_8_23_8_23_uid2_Wrapper using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+report_timing > ../REP/PS_t_$dname.rep
+report_area > ../REP/PS_a_$dname.rep
+report_power > ../REP/PS_p_$dname.rep
+write_sdf ../SDF/$dname.ps.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/jiaoxun/DAC2018/SDF/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.ps.sdf'. (WT-3)
+1
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+Version: J-2014.09-SP5-3
+Date   : Mon Nov  6 15:09:46 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: WCCOM   Library: tcbn45gsbwpwc
+Wire Load Model Mode: Inactive.
+
+  Startpoint: i_X_d1_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_R_d1_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_X_d1_reg[5]/CP (DFQD4BWPHVT)                          0.00       0.00 r
+  i_X_d1_reg[5]/Q (DFQD4BWPHVT)                           0.16       0.16 f
+  U98/ZN (XNR2D0BWPHVT)                                   0.15 *     0.31 f
+  U156/ZN (OAI22D0BWPHVT)                                 0.12 *     0.43 r
+  U165/S (FA1D1BWPHVT)                                    0.23 *     0.66 r
+  U159/ZN (NR2XD0BWPHVT)                                  0.03 *     0.69 f
+  U160/ZN (INVD0BWPHVT)                                   0.04 *     0.74 r
+  U163/ZN (AOI21D1BWP)                                    0.04 *     0.78 f
+  U168/ZN (OAI21D2BWP)                                    0.04 *     0.82 r
+  U1370/ZN (CKND1BWPHVT)                                  0.03 *     0.85 f
+  U1371/ZN (OAI21D1BWPHVT)                                0.05 *     0.90 r
+  U1375/Z (XOR2D1BWP)                                     0.08 *     0.98 f
+  test/SignificandMultiplication/Adder_final6_0/X[1] (IntAdder_42_f100_uid15)
+                                                          0.00       0.98 f
+  test/SignificandMultiplication/Adder_final6_0/U5/ZN (ND2D0BWPHVT)
+                                                          0.04 *     1.02 r
+  test/SignificandMultiplication/Adder_final6_0/U6/ZN (OAI21D0BWPHVT)
+                                                          0.07 *     1.09 f
+  test/SignificandMultiplication/Adder_final6_0/U11/ZN (AOI21D1BWPHVT)
+                                                          0.07 *     1.16 r
+  test/SignificandMultiplication/Adder_final6_0/U271/ZN (INVD0BWPHVT)
+                                                          0.05 *     1.21 f
+  test/SignificandMultiplication/Adder_final6_0/U299/ZN (AOI21D0BWPHVT)
+                                                          0.07 *     1.28 r
+  test/SignificandMultiplication/Adder_final6_0/U301/Z (XOR2D0BWPHVT)
+                                                          0.14 *     1.42 f
+  test/SignificandMultiplication/Adder_final6_0/R[4] (IntAdder_42_f100_uid15)
+                                                          0.00       1.42 f
+  U1547/ZN (INR4D0BWP)                                    0.07 *     1.49 r
+  U1548/ZN (INR4D0BWP)                                    0.11 *     1.60 r
+  U1549/ZN (ND2D1BWPLVT)                                  0.03 *     1.63 f
+  U1550/ZN (NR4D1BWPLVT)                                  0.03 *     1.66 r
+  U1551/ZN (OAI21D1BWPLVT)                                0.03 *     1.69 f
+  U112/ZN (NR2D2BWPLVT)                                   0.02 *     1.71 r
+  U109/ZN (INR2D1BWPLVT)                                  0.02 *     1.72 f
+  test/RoundingAdder/Cin (IntAdder_33_f100_uid23)         0.00       1.72 f
+  test/RoundingAdder/U73/ZN (INVD2BWPLVT)                 0.02 *     1.74 r
+  test/RoundingAdder/U26/ZN (NR2D2BWPLVT)                 0.01 *     1.75 f
+  test/RoundingAdder/U63/ZN (ND2D2BWPLVT)                 0.01 *     1.76 r
+  test/RoundingAdder/U55/ZN (NR2D4BWPLVT)                 0.01 *     1.78 f
+  test/RoundingAdder/U70/ZN (INVD3BWP)                    0.02 *     1.80 r
+  test/RoundingAdder/U75/ZN (NR2XD1BWPLVT)                0.02 *     1.81 f
+  test/RoundingAdder/U79/ZN (XNR2D1BWPHVT)                0.10 *     1.91 r
+  test/RoundingAdder/R[13] (IntAdder_33_f100_uid23)       0.00       1.91 r
+  o_R_d1_reg[13]/D (DFQD1BWPHVT)                          0.00 *     1.91 r
+  data arrival time                                                  1.91
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  o_R_d1_reg[13]/CP (DFQD1BWPHVT)                         0.00       2.00 r
+  library setup time                                     -0.04       1.96
+  data required time                                                 1.96
+  --------------------------------------------------------------------------
+  data required time                                                 1.96
+  data arrival time                                                 -1.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+1
+#exit
+dc_shell> exit
+
+Thank you...
+

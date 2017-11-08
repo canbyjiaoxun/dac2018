@@ -1,0 +1,131 @@
+FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+1
+true
+/home/TSMC/45GS_GP_CCS_NVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwpwcz0d9_ccs.db
+/home/TSMC/45GS_GP_CCS_LVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwcz0d9_ccs.db
+/home/TSMC/45GS_GP_CCS_HVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwcz0d9_ccs.db
+/home/TSMC/45GS_GP_CCS_NVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwpbc_ccs.db
+/home/TSMC/45GS_GP_CCS_LVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwplvt_120a/tcbn45gsbwplvtbc_ccs.db
+/home/TSMC/45GS_GP_CCS_HVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwphvt_120a/tcbn45gsbwphvtbc_ccs.db
+* /home/TSMC/45GS_GP_CCS_NVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwpwcz0d9_ccs.db /home/TSMC/45GS_GP_CCS_LVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwcz0d9_ccs.db /home/TSMC/45GS_GP_CCS_HVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwcz0d9_ccs.db
+1
+Loading db file '/home/TSMC/45GS_GP_CCS_NVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwpwcz0d9_ccs.db'
+Loading verilog file '/home/jiaoxun/DAC2018/PL/FPMultiplier_8_23_8_23_8_23_uid2_Wrapper.pl.v'
+Loading db file '/home/TSMC/45GS_GP_CCS_LVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwplvt_120a/tcbn45gsbwplvtwcz0d9_ccs.db'
+Loading db file '/home/TSMC/45GS_GP_CCS_HVT/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwphvt_120a/tcbn45gsbwphvtwcz0d9_ccs.db'
+{"FPMultiplier_8_23_8_23_8_23_uid2_Wrapper"}
+Linking design FPMultiplier_8_23_8_23_8_23_uid2_Wrapper...
+1
+{"FPMultiplier_8_23_8_23_8_23_uid2_Wrapper"}
+****************************************
+Report : design
+Design : FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 15:22:15 2017
+****************************************
+
+Design Attribute                         Value
+---------------------------------------------------------------------------
+Operating Conditions:
+  analysis_type                          on_chip_variation
+  operating_condition_min_name           WCZ0D9COM
+  process_min                            1
+  temperature_min                        0
+  voltage_min                            0.9
+  tree_type_min                          balanced_case
+
+  operating_condition_max_name           WCZ0D9COM
+  process_max                            1
+  temperature_max                        0
+  voltage_max                            0.9
+  tree_type_max                          balanced_case
+
+Wire Load:                               (use report_wire_load for more information)
+  wire_load_mode                         segmented
+  wire_load_model_max                    --
+  wire_load_model_min                    --
+  wire_load_selection_group_max          WireAreaForZero
+  wire_load_selection_group_min          WireAreaForZero
+  wire_load_min_block_size               0
+
+Design Rules:
+  max_capacitance                        --
+  min_capacitance                        --
+  max_fanout                             --
+  max_transition                         --
+  static_integrity                       --
+  dynamic_integrity                      --
+  max_area                               --
+
+Timing Ranges:
+  early_factor                           --
+  late_factor                            --
+
+Pin Input Delays:
+None specified.
+
+Pin Output Delays:
+None specified.
+Fast Analysis:                           disabled
+
+1
+Completing scaling library groups ... 
+... the scaling library groups are complete.
+Completing scaling library group for power analysis ...
+    'tcbn45gsbwpwcz0d9_ccs' 'tcbn45gsbwpbc_ccs'
+... the scaling library group for power analysis is complete.
+1
+Completing scaling library groups ... 
+... the scaling library groups are complete.
+Completing scaling library group for power analysis ...
+    'tcbn45gsbwplvtwcz0d9_ccs' 'tcbn45gsbwplvtbc_ccs'
+... the scaling library group for power analysis is complete.
+1
+Completing scaling library groups ... 
+... the scaling library groups are complete.
+Completing scaling library group for power analysis ...
+    'tcbn45gsbwphvtwcz0d9_ccs' 'tcbn45gsbwphvtbc_ccs'
+... the scaling library group for power analysis is complete.
+1
+****************************************
+Report : lib_groups
+	-scaling
+	-show
+Design : FPMultiplier_8_23_8_23_8_23_uid2_Wrapper
+Version: K-2015.06-SP1
+Date   : Mon Nov  6 15:23:30 2017
+****************************************
+
+Group    Library        Temperature    Voltage                       
+-------------------------------------------------------------------------------
+Group 1
+         tcbn45gsbwplvtwcz0d9_ccs
+                           0.00        {  COREVDD1:0.90 COREGND1:0.00 COREVDD2:0.90 COREGND2:0.00 }
+         tcbn45gsbwplvtbc_ccs
+                           0.00        {  COREVDD1:0.99 COREGND1:0.00 COREVDD2:0.99 COREGND2:0.00 }
+Group 2
+         tcbn45gsbwphvtwcz0d9_ccs
+                           0.00        {  COREVDD1:0.90 COREGND1:0.00 COREVDD2:0.90 COREGND2:0.00 }
+         tcbn45gsbwphvtbc_ccs
+                           0.00        {  COREVDD1:0.99 COREGND1:0.00 COREVDD2:0.99 COREGND2:0.00 }
+Group 3
+         tcbn45gsbwpwcz0d9_ccs
+                           0.00        {  COREVDD1:0.90 COREGND1:0.00 COREVDD2:0.90 COREGND2:0.00 }
+         tcbn45gsbwpbc_ccs
+                           0.00        {  COREVDD1:0.99 COREGND1:0.00 COREVDD2:0.99 COREGND2:0.00 }
+1
+0.90 0.91 0.92 0.93 0.94 0.95 0.96 0.97 0.98 0.99
+0
+Suppressed Messages Summary:
+Id          Severity      Occurrences   Suppressed
+-------------------------------------------------------------------------------
+PTE-003     Warning                10           10
+RC-011      Warning                 6            6
+ENV-003     Information            20           20
+Total 3 types of messages are suppressed
+Maximum memory usage for this session: 4372.65 MB
+CPU usage for this session: 133 seconds 
+Elapsed time for this session: 214 seconds
+Diagnostics summary: 20 warnings, 48 informationals
+
+Thank you for using pt_shell!
